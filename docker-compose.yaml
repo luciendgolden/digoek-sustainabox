@@ -1,0 +1,65 @@
+version: '3.8'
+services:
+  nginx:
+      image: nginx:latest
+      ports:
+        - "80:80"
+        - "443:443"
+      volumes:
+        - ./nginx/conf.d:/etc/nginx/conf.d:ro
+        - ./nginx/certificates/server.crt:/etc/nginx/server.crt:ro
+        - ./nginx/certificates/server.key:/etc/nginx/server.key:ro
+      depends_on:
+        - frontend-ui
+        - backend-api
+      command: [nginx-debug, '-g', 'daemon off;']
+
+  frontend-ui:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    # Not exposing http port as it is only used by nginx
+    # ports:
+    #  - "3000:3000"
+    volumes:
+      - ./client:/usr/src/app
+    environment:
+      NEXTAUTH_SECRET: my_secret
+      NEXTAUTH_URL: https://localhost:443
+      BACKEND_URL: http://backend-api:5000
+      BACKEND_URL_BROWSER: http://localhost:5000
+    depends_on:
+      - backend-api
+      - mongodb
+    command: npm run start
+
+  backend-api:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server:/usr/src/app
+    environment:
+      PORT: 5000
+      SWAGGER_BASE: http://localhost:5000
+      DB_URI: mongodb://mongodb:27017
+      DB_NAME: sustainabox
+      JWT_SECRET: my_secret
+      SALT_ROUNDS: 10
+    depends_on:
+      - mongodb
+    command: npm run start
+
+  mongodb:
+    image: mongo:7.0.4
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db
+
+volumes:
+  mongodb-data:
+
+

@@ -1,0 +1,142 @@
+[{
+  "_id": {
+    "$oid": "6580924be98f20fa5d1095fb"
+  },
+  "name": "Biodegradable Cleaning Sponges",
+  "description": "Eco-friendly, biodegradable sponges made from natural fibers, ideal for household cleaning.",
+  "productPrice": 4.99,
+  "stockLevel": 150,
+  "categories": [
+    {
+      "$oid": "658062a7e98f20fa5d1095df"
+    }
+  ],
+  "supplierId": {
+    "$oid": "658067c30f59b9f937111be8"
+  }
+},
+{
+  "_id": {
+    "$oid": "6580924be98f20fa5d1095fc"
+  },
+  "name": "Reusable Beeswax Food Wraps",
+  "description": "Sustainable alternative to plastic wraps, made with organic cotton and beeswax.",
+  "productPrice": 12.99,
+  "stockLevel": 100,
+  "categories": [
+    {
+      "$oid": "658062a7e98f20fa5d1095df"
+    },
+    {
+      "$oid": "658062a7e98f20fa5d1095e0"
+    }
+  ],
+  "supplierId": {
+    "$oid": "658067c30f59b9f937111be8"
+  }
+},
+{
+  "_id": {
+    "$oid": "6580924be98f20fa5d1095fd"
+  },
+  "name": "Stainless Steel Water Bottles",
+  "description": "Durable and reusable water bottles, perfect for reducing plastic waste.",
+  "productPrice": 19.99,
+  "stockLevel": 200,
+  "categories": [
+    {
+      "$oid": "658062a7e98f20fa5d1095e0"
+    }
+  ],
+  "supplierId": {
+    "$oid": "658067c30f59b9f937111be8"
+  }
+},
+{
+  "_id": {
+    "$oid": "6580924be98f20fa5d1095fe"
+  },
+  "name": "Compostable Toothbrushes",
+  "description": "Toothbrushes made from compostable materials, promoting zero-waste in daily hygiene routines.",
+  "productPrice": 3.99,
+  "stockLevel": 300,
+  "categories": [
+    {
+      "$oid": "658062a7e98f20fa5d1095e0"
+    },
+    {
+      "$oid": "658062a7e98f20fa5d1095e1"
+    }
+  ],
+  "supplierId": {
+    "$oid": "658067c30f59b9f937111be8"
+  }
+},
+{
+  "_id": {
+    "$oid": "6580924be98f20fa5d1095ff"
+  },
+  "name": "Organic Almond Butter",
+  "description": "Creamy, organic almond butter made from locally sourced almonds.",
+  "productPrice": 8.99,
+  "stockLevel": 80,
+  "categories": [
+    {
+      "$oid": "658062a7e98f20fa5d1095e1"
+    }
+  ],
+  "supplierId": {
+    "$oid": "658067c30f59b9f937111be8"
+  }
+},
+{
+  "_id": {
+    "$oid": "6580924be98f20fa5d109600"
+  },
+  "name": "Organic Quinoa Pack",
+  "description": "Nutritious and organic quinoa, perfect for healthy meals.",
+  "productPrice": 6.99,
+  "stockLevel": 120,
+  "categories": [
+    {
+      "$oid": "658062a7e98f20fa5d1095e1"
+    }
+  ],
+  "supplierId": {
+    "$oid": "658067c30f59b9f937111be8"
+  }
+},
+{
+  "_id": {
+    "$oid": "6580924be98f20fa5d109601"
+  },
+  "name": "Bamboo Fiber T-Shirt",
+  "description": "Stylish and comfortable t-shirts made from sustainable bamboo fibers.",
+  "productPrice": 24.99,
+  "stockLevel": 90,
+  "categories": [
+    {
+      "$oid": "658062a7e98f20fa5d1095e2"
+    }
+  ],
+  "supplierId": {
+    "$oid": "658067c30f59b9f937111be8"
+  }
+},
+{
+  "_id": {
+    "$oid": "6580924be98f20fa5d109602"
+  },
+  "name": "Recycled Fabric Sneakers",
+  "description": "Fashionable sneakers crafted from recycled materials, combining style with eco-consciousness.",
+  "productPrice": 55,
+  "stockLevel": 50,
+  "categories": [
+    {
+      "$oid": "658062a7e98f20fa5d1095e2"
+    }
+  ],
+  "supplierId": {
+    "$oid": "658067c30f59b9f937111be8"
+  }
+}]

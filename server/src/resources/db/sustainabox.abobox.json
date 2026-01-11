@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "6580cf9fe98f20fa5d10960d"
+  },
+  "boxType": "Sustainable Household Essentials",
+  "size": "Medium",
+  "price": 18,
+  "products": [
+    {
+      "$oid": "6580924be98f20fa5d1095fb"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6580cf9fe98f20fa5d10960e"
+  },
+  "boxType": "Zero-Waste Starter Kit",
+  "size": "Medium",
+  "price": 36.98,
+  "products": [
+    {
+      "$oid": "6580924be98f20fa5d1095fc"
+    },
+    {
+      "$oid": "6580924be98f20fa5d1095fd"
+    },
+    {
+      "$oid": "6580924be98f20fa5d1095fe"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6580cf9fe98f20fa5d10960f"
+  },
+  "boxType": "Organic Gourmet",
+  "size": "Small",
+  "price": 15.98,
+  "products": [
+    {
+      "$oid": "6580924be98f20fa5d1095ff"
+    },
+    {
+      "$oid": "6580924be98f20fa5d109600"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6580cf9fe98f20fa5d109610"
+  },
+  "boxType": "Eco-Friendly Fashion",
+  "size": "Small",
+  "price": 79.99,
+  "products": [
+    {
+      "$oid": "6580924be98f20fa5d109601"
+    },
+    {
+      "$oid": "6580924be98f20fa5d109602"
+    }
+  ]
+}]

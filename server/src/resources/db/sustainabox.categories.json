@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "658062a7e98f20fa5d1095df"
+  },
+  "type": "Sustainable Household Goods",
+  "description": "Products designed to enhance sustainability in everyday household activities. Includes reusable, eco-friendly items.",
+  "seoTag": "eco-friendly-household"
+},
+{
+  "_id": {
+    "$oid": "658062a7e98f20fa5d1095e0"
+  },
+  "type": "Zero-Waste Products",
+  "description": "Products designed to eliminate waste and promote a zero-waste lifestyle. Includes biodegradable and compostable items.",
+  "seoTag": "zero-waste-living"
+},
+{
+  "_id": {
+    "$oid": "658062a7e98f20fa5d1095e1"
+  },
+  "type": "Organic Foods",
+  "description": "A variety of organic food products sourced from responsible, local providers in Austria. Focuses on natural and health-conscious choices.",
+  "seoTag": "organic-foods"
+},
+{
+  "_id": {
+    "$oid": "658062a7e98f20fa5d1095e2"
+  },
+  "type": "Eco-friendly Fashion",
+  "description": "Sustainable fashion items that combine style with environmental responsibility. Includes clothing made from organic or recycled materials.",
+  "seoTag": "sustainable-fashion"
+}]

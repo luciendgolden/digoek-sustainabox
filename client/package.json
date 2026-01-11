@@ -1,0 +1,41 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/inter": "^5.0.16",
+    "@mui/icons-material": "^5.15.1",
+    "@mui/joy": "^5.0.0-beta.19",
+    "@mui/material": "^5.15.1",
+    "@mui/x-date-pickers": "^6.18.6",
+    "@mui/x-date-pickers-pro": "^6.18.6",
+    "chart.js": "^4.4.1",
+    "cookies": "^0.8.0",
+    "dayjs": "^1.11.10",
+    "jwt-decode": "^4.0.0",
+    "next": "14.0.4",
+    "next-auth": "^4.24.5",
+    "nookies": "^2.5.2",
+    "react": "^18",
+    "react-canvas-confetti": "^1.4.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18",
+    "sharp": "^0.33.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "typescript": "^5"
+  }
+}

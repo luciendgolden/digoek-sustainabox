@@ -1,0 +1,110 @@
+type Mutation {
+  createUser(input: CreateUserInput!): User 
+  updateUser(_id: ID!, input: UpdateUserInput!): User
+  deleteUser(_id: ID!): ID
+}
+
+input CreateUserInput {
+  email: String!
+  password: String!
+  firstName: String!
+  lastName: String!
+  subscriptionStatus: Boolean!
+  referredBy: ID
+  role: RoleInput!
+  preferences: [PreferenceInput]
+}
+
+input UpdateUserInput {
+  email: String
+  password: String
+  firstName: String
+  lastName: String
+  subscriptionStatus: Boolean
+  role: RoleInput
+  preferences: [PreferenceInput]
+}
+
+input RoleInput {
+  type: String
+  description: String
+}
+
+input PreferenceInput {
+  categoryId: ID
+  preferenceLevel: Int
+  source: String
+}
+
+type User {
+  _id: ID!
+  email: String!
+  password: String!
+  firstName: String!
+  lastName: String!
+  subscriptionStatus: Boolean!
+  referredBy: ID
+  role: Role!
+  preferences: [Preference]
+}
+  type Preference {
+    categoryId: ID!
+    preferenceLevel: Int!
+    source: String!
+  }
+
+  type Role {
+    type: RoleEnum!
+    description: String
+  }
+
+  enum RoleEnum {
+    admin,
+    supplier,
+    user
+  }
+
+
+
+  type Order {
+    _id: ID!
+    user: User
+    orderDate: String
+    paymentMethod: String
+    deliveryAddress: String
+    orderStatus: String
+    items: [OrderItem]
+    totalOrderPrice: Float  # Add this line
+  }
+
+
+type OrderItem {
+  aboBoxId: ID!
+  quantity: Int
+  orderPrice: Float
+  subscriptionStatus: String
+  subscription_months: Int
+}
+
+
+type Supplier {
+  _id: ID!
+  name: String
+  location: String
+  is_partner: Boolean
+}
+
+type Category {
+  _id: ID!
+  type: String
+  description: String
+  seo_tag: String
+}
+
+
+  type Query {
+  users: [User]
+  userById(_id: ID!): User
+  orders: [Order]  # Add this line
+  order(orderId: ID!): Order
+}

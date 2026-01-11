@@ -1,0 +1,77 @@
+[{
+  "_id": {
+    "$oid": "658066a1dc3d736fc2bdbe2f"
+  },
+  "email": "user@example.com",
+  "password": "$2b$10$7/H19JloJNuYpIbnLlOH5e2DYfOJjgIaKFGHbiBdVYMiTByX8CUYy",
+  "firstName": "John",
+  "lastName": "Doe",
+  "subscriptionStatus": true,
+  "role": {
+    "type": "user",
+    "description": "Regular user with access to subscription boxes."
+  },
+  "referredBy": null,
+  "preferences": [
+    {
+      "categoryId": {
+        "$oid": "658062a7e98f20fa5d1095df"
+      },
+      "preferenceLevel": 5,
+      "source": "user"
+    },
+    {
+      "categoryId": {
+        "$oid": "658062a7e98f20fa5d1095e0"
+      },
+      "preferenceLevel": 5,
+      "source": "user"
+    },
+    {
+      "categoryId": {
+        "$oid": "658062a7e98f20fa5d1095e1"
+      },
+      "preferenceLevel": 2,
+      "source": "user"
+    },
+    {
+      "categoryId": {
+        "$oid": "658062a7e98f20fa5d1095e2"
+      },
+      "preferenceLevel": 1,
+      "source": "user"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "658066b4dc3d736fc2bdbe30"
+  },
+  "email": "admin@example.com",
+  "password": "$2b$10$7/H19JloJNuYpIbnLlOH5e2DYfOJjgIaKFGHbiBdVYMiTByX8CUYy",
+  "firstName": "Alice",
+  "lastName": "Smith",
+  "subscriptionStatus": false,
+  "role": {
+    "type": "admin",
+    "description": "Administrator with full access to the system."
+  },
+  "referredBy": null,
+  "preferences": []
+},
+{
+  "_id": {
+    "$oid": "658067c30f59b9f937111be8"
+  },
+  "email": "supplier@example.com",
+  "password": "$2b$10$7/H19JloJNuYpIbnLlOH5e2DYfOJjgIaKFGHbiBdVYMiTByX8CUYy",
+  "firstName": "Bob",
+  "lastName": "Brown",
+  "subscriptionStatus": false,
+  "role": {
+    "type": "supplier",
+    "description": "Supplier providing products to the platform."
+  },
+  "referredBy": null,
+  "preferences": []
+}]
