@@ -1,4 +1,4 @@
-#WS2023 DigOek SustainaBox
+# WS2023 DigOek SustainaBox
 
 # Description of the company
 
